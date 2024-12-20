@@ -8,3 +8,7 @@ document.querySelectorAll(".switch-form a").forEach(link => {
       document.getElementById(target).classList.remove("hidden");
     });
   });
+
+  function redirectToIndex() {
+    window.location.href = 'index.html';
+}
