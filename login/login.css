@@ -1,0 +1,104 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 400px;
+    background: #121212; /* Fundo levemente cinza */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Estilo dos formulários */
+  .form-container {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700; /* Amarelo */
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffd700; /* Amarelo */
+    border-radius: 8px;
+    font-size: 16px;
+    background: #1e1e1e; /* Fundo escuro */
+    color: #fff;
+  }
+  
+  .input-field:focus {
+    border-color: #fff;
+    outline: none;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffd700; /* Amarelo */
+    color: #000; /* Texto preto */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #fff; /* Branco ao hover */
+    transform: scale(1.05);
+  }
+  
+  .switch-form {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .switch-form a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  .switch-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

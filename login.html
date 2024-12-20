@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login e Registro</title>
+  <link rel="stylesheet" href="./login/login.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Login Form -->
+    <div class="form-container" id="login">
+      <h1 class="form-title">Login</h1>
+      <form>
+        <input type="text" placeholder="Usuário" class="input-field">
+        <input type="password" placeholder="Senha" class="input-field">
+        <button type="submit" class="btn" >Entrar</button>
+        <p class="switch-form">Não tem uma conta? <a href="#register" class="switch-link">Registre-se</a></p>
+      </form>
+    </div>
+
+    <!-- Register Form -->
+    <div class="form-container hidden" id="register">
+      <h1 class="form-title">Registrar-se</h1>
+      <form>
+        <input type="text" placeholder="Usuário" class="input-field">
+        <input type="email" placeholder="E-mail" class="input-field">
+        <input type="password" placeholder="Senha" class="input-field">
+        <button type="submit" class="btn">Registrar</button>
+        <p class="switch-form">Já tem uma conta? <a href="#login" class="switch-link">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="./login/login.js"></script>
+</body>
+</html>
